@@ -6,41 +6,41 @@ def faq():
     st.markdown(
         """
 # FAQ
-## How does KnowledgeGPT work?
-When you upload a document, it will be divided into smaller chunks 
-and stored in a special type of database called a vector index 
-that allows for semantic search and retrieval.
+## Как работает ЗнанияGPT?
+Когда вы загружаете документ, он будет разделен на более мелкие фрагменты.
+и хранится в базе данных специального типа, называемой векторным индексом.
+что позволяет осуществлять семантический поиск и извлечение.
 
-When you ask a question, KnowledgeGPT will search through the
-document chunks and find the most relevant ones using the vector index.
-Then, it will use GPT3 to generate a final answer.
+Когда вы задаете вопрос, ЗнанияGPT выполняет поиск по
+документировать фрагменты и находить наиболее релевантные с помощью векторного индекса.
+Затем он будет использовать GPT3 для получения окончательного ответа.
 
-## Is my data safe?
-Yes, your data is safe. KnowledgeGPT does not store your documents or
-questions. All uploaded data is deleted after you close the browser tab.
+## Мои данные в безопасности?
+Да, ваши данные в безопасности. ЗнанияGPT не хранит ваши документы или
+вопросы. Все загруженные данные удаляются после закрытия вкладки браузера.
 
-## Why does it take so long to index my document?
-If you are using a free OpenAI API key, it will take a while to index
-your document. This is because the free API key has strict [rate limits](https://platform.openai.com/docs/guides/rate-limits/overview).
-To speed up the indexing process, you can use a paid API key.
+## Почему так долго индексируется мой документ?
+Если вы используете бесплатный ключ API OpenAI, индексация займет некоторое время.
+ваш документ. Это связано с тем, что бесплатный ключ API имеет строгие [ограничения скорости] (https://platform.openai.com/docs/guides/rate-limits/overview).
+Чтобы ускорить процесс индексации, вы можете использовать платный API-ключ.
 
-## What do the numbers mean under each source?
-For a PDF document, you will see a citation number like this: 3-12. 
-The first number is the page number and the second number is 
-the chunk number on that page. For DOCS and TXT documents, 
-the first number is set to 1 and the second number is the chunk number.
+## Что означают цифры под каждым источником?
+Для документа PDF вы увидите номер цитирования, подобный этому: 3-12.
+Первая цифра - это номер страницы, а вторая цифра
+номер чанка на этой странице. Для документов DOCX и TXT:
+первое число установлено равным 1, а второе число является номером фрагмента.
 
-## Are the answers 100% accurate?
-No, the answers are not 100% accurate. KnowledgeGPT uses GPT-3 to generate
-answers. GPT-3 is a powerful language model, but it sometimes makes mistakes 
-and is prone to hallucinations. Also, KnowledgeGPT uses semantic search
-to find the most relevant chunks and does not see the entire document,
-which means that it may not be able to find all the relevant information and
-may not be able to answer all questions (especially summary-type questions
-or questions that require a lot of context from the document).
+## Являются ли ответы на 100% точными?
+Нет, ответы не на 100% точны. ЗнанияGPT использует GPT-3 для создания
+ответы. GPT-3 — мощная языковая модель, но иногда она допускает ошибки.
+и склонен к галлюцинациям. Кроме того, ЗнанияGPT использует семантический поиск
+найти наиболее релевантные фрагменты и не видит весь документ,
+это означает, что он может быть не в состоянии найти всю необходимую информацию и
+может быть не в состоянии ответить на все вопросы (особенно вопросы сводного типа)
+или вопросы, которые требуют много контекста из документа).
 
-But for most use cases, KnowledgeGPT is very accurate and can answer
-most questions. Always check with the sources to make sure that the answers
-are correct.
+Но для большинства случаев использования ЗнанияGPT очень точен и может ответить
+большинство вопросов. Всегда сверяйтесь с источниками, чтобы убедиться, что ответы
+верны.
 """
     )
